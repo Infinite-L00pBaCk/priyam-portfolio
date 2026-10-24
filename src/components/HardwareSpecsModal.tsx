@@ -436,7 +436,7 @@ export const HardwareSpecsModal: React.FC<HardwareSpecsModalProps> = ({
                       </p>
                       <div className="flex gap-1.5 mt-2">
                         <span className="px-1.5 py-0.5 bg-rose-100 text-rose-800 text-[9px] font-bold rounded">PyTorch / CRNN</span>
-                        <span className="px-1.5 py-0.5 bg-indigo-100 text-indigo-800 text-[9px] font-bold rounded">IIT Madras Shaastra</span>
+                        <span className="px-1.5 py-0.5 bg-indigo-100 text-indigo-800 text-[9px] font-bold rounded">VIT Bhopal HackSecure</span>
                       </div>
                     </div>
 

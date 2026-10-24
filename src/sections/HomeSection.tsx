@@ -131,7 +131,7 @@ export const HomeSection: React.FC<HomeSectionProps> = ({ data, onNavigate }) =>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-300">HONOR:</span>
-                    <span className="font-black text-amber-300">Shaastra 2026 Winner</span>
+                    <span className="font-black text-amber-300">HackSecure Winner</span>
                   </div>
                 </div>
 

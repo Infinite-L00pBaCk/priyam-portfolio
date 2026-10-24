@@ -24,10 +24,29 @@ import { playClickSound, playWindowOpenSound } from './utils/sound';
 export default function App() {
   // 'desk' = the full retro desktop environment with vintage computer & boot sequence
   // 'portfolio' = the expanded full professional portfolio website
-  const [viewMode, setViewMode] = useState<'desk' | 'portfolio'>('desk');
+  const [viewMode, setViewMode] = useState<'desk' | 'portfolio'>(() => {
+    if (typeof window !== 'undefined') {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('view') === 'portfolio' || window.location.hash) {
+        return 'portfolio';
+      }
+    }
+    return 'desk';
+  });
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [crtEnabled, setCrtEnabled] = useState<boolean>(false);
   const [activeSection, setActiveSection] = useState<string>('home');
+
+  // Handle direct hash navigation on initial load
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.location.hash) {
+      const sectionId = window.location.hash.replace('#', '');
+      setTimeout(() => {
+        const el = document.getElementById(sectionId);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 300);
+    }
+  }, []);
 
   // Track active section on scroll when in portfolio mode
   useEffect(() => {

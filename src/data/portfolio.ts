@@ -19,7 +19,7 @@ export const portfolioData: PortfolioData = {
       "Core coursework in Microcontrollers, Digital System Design, VLSI, Signal Processing, and Data Structures",
       "General Secretary, Cisco Community VIT Bhopal (Promoted June 2026)",
       "Core Member, IEEE Student Branch Ideation Department",
-      "3rd Place Winner at Shaastra 2026 HackSecure Hackathon (IIT Madras)"
+      "3rd Place Winner at HackSecure Hackathon (VIT Bhopal)"
     ]
   },
 
@@ -35,8 +35,8 @@ export const portfolioData: PortfolioData = {
   quickStats: [
     { label: "ACADEMIC CGPA", value: "8.38", detail: "VIT Bhopal ECE" },
     { label: "INTERNSHIPS", value: "5+", detail: "IIT Ropar, Maven Silicon, Space Lab" },
-    { label: "CORE PROJECTS", value: "7", detail: "Hardware, Web, AI & Simulators" },
-    { label: "HONORS & CERTS", value: "9+", detail: "IIT Madras Winner, Google Certified" }
+    { label: "CORE PROJECTS", value: "7", detail: "Hardware, Web, AI, Java & Simulators" },
+    { label: "HONORS & CERTS", value: "11+", detail: "Hackathon Winner, Oracle & Google Certified" }
   ],
 
   journey: [
@@ -70,9 +70,9 @@ export const portfolioData: PortfolioData = {
     {
       year: "2026",
       quarter: "Q1",
-      title: "Shaastra 2026 3rd Place & IEEE Ideation Department",
+      title: "HackSecure Hackathon 3rd Place & IEEE Ideation Department",
       category: "Award",
-      description: "Won 3rd Place at HackSecure Hackathon during Shaastra 2026 (IIT Madras) as an IEEE Student Member (#102161442). Joined IEEE Student Branch Ideation Department.",
+      description: "Won 3rd Place at HackSecure Hackathon (VIT Bhopal) as an IEEE Student Member (#102161442). Joined IEEE Student Branch Ideation Department.",
       details: ["Engineered security solutions under tight hackathon constraints", "Trained ML CRNN model for automated CAPTCHA decoding"],
       systemLogCode: "LOG_2026_HACK"
     },
@@ -194,37 +194,6 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: "PROJ_004",
-      codeName: "STOCK_SENTIMENT_BOT.PY",
-      title: "Stock Sentiment Analysis Bot & Financial Intelligence",
-      year: "2026",
-      category: "AI & ML",
-      shortDescription: "Automated quantitative financial intelligence engine scraping market news, social feeds, and earnings transcripts for real-time sentiment scoring and trend signals.",
-      techStack: ["Python", "NLTK / VADER", "Transformers / BERT", "Pandas", "BeautifulSoup4", "FastAPI"],
-      status: "Active Deployment",
-      overview: "An automated NLP pipeline designed to quantify investor market sentiment across global equities. The engine continuously monitors financial news feeds, SEC filings, and forum discussions to calculate weighted polarity scores correlated with trading volume and price momentum.",
-      problem: "Retail investors struggle to ingest high-volume financial feeds in real time, often reacting late to macro sentiment shifts and breaking news.",
-      solution: "Engineered an end-to-end sentiment aggregator leveraging fine-tuned transformer models (FinBERT) and VADER heuristics to produce real-time bullish/bearish conviction indices.",
-      features: [
-        "Multi-source financial news ingestion pipeline with rate-limited scrapers",
-        "FinBERT and VADER dual-scoring engine for domain-specific financial sentiment",
-        "Dynamic ticker tagging and entity resolution across global stock markets",
-        "Time-series correlation between sentiment index spikes and price action volatility",
-        "Automated daily summary report generator and Discord/Telegram alert webhooks"
-      ],
-      technologies: [
-        { name: "Hugging Face / FinBERT", role: "Contextual sentiment embeddings for financial lexicons" },
-        { name: "Python & Pandas", role: "Time-series data manipulation and rolling sentiment averages" },
-        { name: "BeautifulSoup & Requests", role: "Asynchronous scraper pipelines for news APIs and RSS feeds" },
-        { name: "FastAPI", role: "High-throughput REST API serving real-time score endpoints" }
-      ],
-      challenges: "Detecting sarcasm, ambiguous financial colloquialisms (e.g., 'to the moon'), and hedging statements in analyst disclosures.",
-      learnings: "Fine-tuned a domain-adapted transformer model on financial social media datasets, boosting directional sentiment accuracy to 91.8%.",
-      githubUrl: "https://github.com/Infinite-L00pBaCk/stock-sentiment-analysis-bot",
-      iconType: "terminal",
-      metrics: ["91.8% domain accuracy", "Multi-source news feeds", "Real-time polarity index"]
-    },
-    {
-      id: "PROJ_005",
       codeName: "GESTURE_SMART_HOME.EXE",
       title: "AI-Powered Gesture Controlled Smart Home",
       year: "2026",
@@ -255,7 +224,7 @@ export const portfolioData: PortfolioData = {
       metrics: ["<30ms pipeline latency", "98.4% gesture accuracy", "21 hand landmarks"]
     },
     {
-      id: "PROJ_006",
+      id: "PROJ_005",
       codeName: "VTOP_AUTO_LOGIN.CRX",
       title: "VTOP Auto Login - ML CAPTCHA Solver Extension",
       year: "2026",
@@ -285,7 +254,7 @@ export const portfolioData: PortfolioData = {
       metrics: ["99.2% OCR accuracy", "800+ trained samples", "Zero-click auto login"]
     },
     {
-      id: "PROJ_007",
+      id: "PROJ_006",
       codeName: "BANKING_SYSTEM.BIN",
       title: "Banking Management System",
       year: "2026",
@@ -314,6 +283,38 @@ export const portfolioData: PortfolioData = {
       githubUrl: "https://github.com/Infinite-L00pBaCk/cpp-banking-management-system",
       iconType: "terminal",
       metrics: ["100% RAII safe", "Binary persistence", "O(1) account lookup"]
+    },
+    {
+      id: "PROJ_007",
+      codeName: "PORTFOLIO_TRACKER.JAR",
+      title: "Personal Portfolio Tracker - Java & SQLite OOP System",
+      year: "2026",
+      category: "Web & Systems",
+      shortDescription: "Modular Java CLI portfolio tracking application featuring persistent SQLite JDBC storage, file I/O export reports (CSV/TXT), multi-criteria sorting, and a 37-test JUnit 5 suite.",
+      techStack: ["Java 17", "JDBC", "SQLite", "JUnit 5", "Maven", "OOP", "File I/O"],
+      status: "Completed",
+      overview: "A modular, command-line Java application to track Stocks, Cryptocurrencies, and Mutual Funds—featuring persistent SQLite database storage, character and byte stream report exporting, multi-criteria Comparator sorting, and an extensive JUnit 5 test suite adhering to strict Object-Oriented Design principles (VITyarthi Project submission).",
+      problem: "Retail investors managing diversified multi-asset holdings across equities, digital assets, and mutual funds often lack transparent, local, zero-telemetry CLI tools with robust data persistence and automated P&L aggregation.",
+      solution: "Engineered an OOP Java architecture with abstract Asset base classes and polymorphic subclasses, an in-memory cache-aside DAO layer over SQLite, defensive input validation, and character/byte stream report generators.",
+      features: [
+        "Multi-asset tracking across Stocks, Cryptocurrencies, and Mutual Funds with NAV",
+        "Persistent SQLite storage (portfolio.db) via JDBC with automated schema initialization",
+        "Consolidated portfolio analytics: total invested capital, current valuation, net P&L, and ROI",
+        "Multi-criteria asset ranking by profit/loss or invested capital using custom Java Comparators",
+        "Report export engine generating CSV (character stream) and formatted text (byte stream) snapshots",
+        "Comprehensive automated test suite with 37 JUnit 5 unit and integration tests"
+      ],
+      technologies: [
+        { name: "Java 17 & OOP", role: "Polymorphism, inheritance hierarchies, and custom checked exceptions" },
+        { name: "SQLite & JDBC", role: "Transactional persistence, DAO pattern, and parameterized queries" },
+        { name: "Java Collections & Streams", role: "In-memory caching, HashMap bucketing, and Comparator sorting" },
+        { name: "JUnit 5", role: "Automated test coverage across domain models, business logic, and sanitizers" }
+      ],
+      challenges: "Ensuring atomic transactions and preventing race conditions or file locking issues between SQLite JDBC connections and stream-based report writers.",
+      learnings: "Implemented a Singleton DatabaseManager with connection pooling and try-with-resources blocks to guarantee zero resource leaks during continuous CRUD cycles.",
+      githubUrl: "https://github.com/Infinite-L00pBaCk/PortfolioTracker",
+      iconType: "terminal",
+      metrics: ["37 JUnit 5 tests", "SQLite JDBC persistence", "Stocks • Crypto • Mutual Funds"]
     }
   ],
 
@@ -560,8 +561,8 @@ export const portfolioData: PortfolioData = {
       shortDescription: "Trained CRNN models (98.4% optical text recognition accuracy) and deployed real-time MediaPipe 21-point hand landmark gesture tracking with OpenCV filters.",
       techStack: ["Python", "OpenCV", "MediaPipe 21-pt", "PyTorch / CRNN", "Image Processing", "Haar Cascades"],
       iconType: "layers",
-      metrics: ["98.4% CRNN Model Accuracy", "30 FPS Edge Landmark Tracking", "IIT Madras 3rd Place"],
-      overview: "Hackathon-proven computer vision pipelines developed during Shaastra 2026 (3rd place) and IoT smart home gesture controller research.",
+      metrics: ["98.4% CRNN Model Accuracy", "30 FPS Edge Landmark Tracking", "Hackathon 3rd Place"],
+      overview: "Hackathon-proven computer vision pipelines developed during HackSecure Hackathon at VIT Bhopal (3rd place) and IoT smart home gesture controller research.",
       practicalApplications: [
         "Automated CAPTCHA segmentation and recurrent neural decoding",
         "Spatial hand-gesture appliance control via UART serial relays",
@@ -572,24 +573,24 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: "SKILL_005",
-      codeName: "FINANCIAL_NLP_ENGINE.BOT",
-      title: "Automated NLP Sentiment Analysis & Financial Bots",
+      codeName: "JAVA_OOP_SQLITE.JAR",
+      title: "Java 17 OOP Architecture & SQLite JDBC Systems",
       year: "2026",
-      category: "AI & Computer Vision",
-      status: "Active Deployment",
-      proficiencyLevel: "Proficient (85%)",
-      shortDescription: "End-to-end Python NLP sentiment aggregation pipelines scoring real-time financial market news and correlating sentiment shifts with price indicators.",
-      techStack: ["Python NLP", "NLTK / VADER", "Time-Series Data", "Market APIs", "Sentiment Scoring", "Data Visualizations"],
+      category: "Programming & C++",
+      status: "Production Tested",
+      proficiencyLevel: "Advanced (90%)",
+      shortDescription: "Robust object-oriented backend and CLI engineering using Java 17, inheritance polymorphism, transactional SQLite JDBC persistence, and JUnit 5 test suites.",
+      techStack: ["Java 17", "OOP Design", "SQLite JDBC", "JUnit 5", "Collections API", "File I/O Streams"],
       iconType: "terminal",
-      metrics: ["Real-Time News Ingestion", "Polarity & Subjectivity Vectoring", "Automated Visual Reports"],
-      overview: "Engineered quantitative sentiment tracking systems converting unstructured market headlines into structured analytical polarity scores.",
+      metrics: ["37 JUnit 5 Tests", "Embedded SQLite JDBC", "Character & Byte Streams"],
+      overview: "Engineered scalable Java applications adhering to strict OOP principles, custom checked exception handling, and cache-aside database persistence.",
       practicalApplications: [
-        "Market news sentiment parsing, tokenization, and scoring",
-        "Correlation analysis against trading volume and moving averages",
-        "Automated algorithmic summary reporting with Matplotlib visual graphs"
+        "Multi-asset financial tracking across Stocks, Crypto, and Mutual Funds",
+        "Stream-based reporting with CSV and formatted text exporters",
+        "Comprehensive automated testing with parameterized unit test cases"
       ],
-      relatedRepoUrl: "https://github.com/Infinite-L00pBaCk/stock-sentiment-analysis-bot",
-      relatedProjectName: "Stock Sentiment Bot"
+      relatedRepoUrl: "https://github.com/Infinite-L00pBaCk/PortfolioTracker",
+      relatedProjectName: "Portfolio Tracker"
     },
     {
       id: "SKILL_006",
@@ -703,11 +704,11 @@ export const portfolioData: PortfolioData = {
       id: "ACH_001",
       code: "HACK_001",
       title: "3rd Place Winner – HackSecure Hackathon",
-      organization: "Shaastra 2026 | IIT Madras",
+      organization: "VIT Bhopal",
       year: "2026",
       type: "Hackathon",
-      description: "Awarded 3rd place in cybersecurity hackathon at Shaastra, the premier annual technical festival of Indian Institute of Technology Madras.",
-      badge: "IIT MADRAS WINNER"
+      description: "Awarded 3rd place in HackSecure cybersecurity hackathon at VIT Bhopal.",
+      badge: "HACKATHON WINNER"
     },
     {
       id: "ACH_002",
@@ -795,6 +796,28 @@ export const portfolioData: PortfolioData = {
       type: "Certification",
       description: "Specialized training on industry standard semiconductor design flow, synthesis, and timing closure via Cadence tools.",
       badge: "IEEE CADENCE"
+    },
+    {
+      id: "ACH_010",
+      code: "CERT_008",
+      title: "Agentic AI Certified Foundations Associate",
+      organization: "Oracle University",
+      year: "2026",
+      type: "Certification",
+      description: "Certified in autonomous agent architectures, multi-agent coordination, goal-driven tool integration, and enterprise agentic reasoning workflows.",
+      verificationId: "103554330AAI26OFA",
+      badge: "ORACLE AGENTIC"
+    },
+    {
+      id: "ACH_011",
+      code: "CERT_009",
+      title: "Oracle Cloud Infrastructure Certified AI Foundations Associate",
+      organization: "Oracle University",
+      year: "2026",
+      type: "Certification",
+      description: "Demonstrated foundational proficiency in Oracle Cloud Infrastructure (OCI) AI services, machine learning lifecycles, and generative AI cloud workloads.",
+      verificationId: "103554330OCI26AICFA",
+      badge: "ORACLE OCI AI"
     }
   ],
 

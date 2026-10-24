@@ -23,7 +23,7 @@ export const AchievementsSection: React.FC<AchievementsSectionProps> = ({ data }
           </span>
         </div>
 
-        {/* Featured Shaastra IIT Madras Award */}
+        {/* Featured HackSecure Hackathon Award */}
         <div className="bg-[#f7c815] border-3 border-[#1c1d21] p-4 sm:p-5 shadow-[6px_6px_0px_#1c1d21] flex flex-col md:flex-row items-start md:items-center justify-between gap-4 relative">
           <div className="flex items-start gap-3.5">
             <div className="w-12 h-12 bg-[#1c1d21] text-[#f7c815] flex items-center justify-center shrink-0 border-2 border-[#1c1d21] shadow-[2px_2px_0px_#1c1d21]">
@@ -35,20 +35,20 @@ export const AchievementsSection: React.FC<AchievementsSectionProps> = ({ data }
                   HACK_001
                 </span>
                 <span className="text-xs font-black text-[#1c1d21] font-mono">
-                  SHAASTRA 2026 • IIT MADRAS
+                  HACKSECURE • VIT BHOPAL
                 </span>
               </div>
               <h3 className="text-lg sm:text-xl font-black font-['Plus_Jakarta_Sans',sans-serif] text-gray-950">
                 3rd Place Winner – HackSecure Hackathon
               </h3>
               <p className="text-xs sm:text-sm text-gray-900 mt-1 font-['Plus_Jakarta_Sans',sans-serif] font-medium">
-                Recognized at IIT Madras' flagship annual technical festival among national-level collegiate engineering competitors.
+                Recognized at VIT Bhopal's HackSecure hackathon among collegiate engineering competitors.
               </p>
             </div>
           </div>
 
           <div className="shrink-0 px-3 py-1.5 bg-[#ffffff] text-[#1c1d21] border-2 border-[#1c1d21] text-xs font-mono font-black tracking-wider shadow-[2px_2px_0px_#1c1d21]">
-            NATIONAL HONORS ★
+            HACKATHON HONORS ★
           </div>
         </div>
 
